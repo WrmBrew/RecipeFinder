@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p1 {
+    position: fixed;
+    bottom: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+}
+
+/* Tab Styles */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+/* Tab Content */
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-content].active {
+    display: block;
+}
+
+/* Form Styles */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Recipe List Styles */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.recipe-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.recipe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.recipe-item span {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Ensuring proper space for fixed footer */
+body {
+    padding-bottom: 40px; /* Adjust as needed */
+}

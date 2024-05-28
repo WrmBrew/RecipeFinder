@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Reverse Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Home</li>
+        <li data-tab-target="#about" class="tab">About</li>
+        <li data-tab-target="#note" class="tab">Leave a note</li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1>Reverse Recipe Finder</h1>
+            <p>If you're interested in broadening your recipe horizon, delving into new cuisine, or simply making space in your crowded refrigerator, look no further. The reverse recipe finder is here to help you. Simply enter the ingredient(s) you have on hand or are interested in using in the search bar below and let the recipe finder work its magic.</p>
+            <div class="box">
+                <form id="search-form">
+                    <label for="ingredient">Enter Ingredient:</label>
+                    <input type="text" id="ingredient" name="ingredient" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="about" data-tab-content>
+            <p>Created and developed by Herrera Wray<br>
+            Graduate of the University of Washington Tacoma</p>
+        </div>
+
+        <div id="note" data-tab-content>
+            <p>If you have any suggestions for the site, more recipes, or are interested in how the site was made, feel free to use this form and leave me a message. I'll do my best to get back to you as soon as possible. Thank you and have a great day!</p>
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="concern">Concern</label>
+                    <select id="concern" name="concern">
+                        <option value="recipe">Recipe</option>
+                        <option value="site">Site</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="none">None of the above</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Place feedback here ..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>       
+
+    <p>Thank you for visiting the reverse recipe finder. Have a nice day!</p>
+    <div id="recipe-list"></div>
+</body>
+</html>
